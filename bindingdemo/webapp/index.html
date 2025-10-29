@@ -11,25 +11,17 @@
         }
     </style>
     <script
-        id="sap-ui-bootstrap"
-        src="resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_horizon"
-        data-sap-ui-resource-roots='{
-            "ns.bindingdemo": "./"
-        }'
-        data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
-        data-sap-ui-compat-version="edge"
-        data-sap-ui-async="true"
-        data-sap-ui-frame-options="trusted"
-    ></script>
+  id="sap-ui-bootstrap"
+  src="resources/sap-ui-core.js"
+  data-sap-ui-theme="sap_fiori_3"
+  data-sap-ui-libs="sap.m"
+  data-sap-ui-compatVersion="edge"
+></script>
 </head>
 <body class="sapUiBody sapUiSizeCompact" id="content">
-    <div
-        data-sap-ui-component
-        data-name="ns.bindingdemo"
-        data-id="container"
-        data-settings='{"id" : "ns.bindingdemo"}'
-        data-handle-validation="true"
-    ></div>
+    <script>
+  var oText = new sap.m.Text({text: "Hello Worl"});
+  oText.placeAt("content");
+</script>
 </body>
 </html>
